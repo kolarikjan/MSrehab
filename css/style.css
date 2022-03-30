@@ -373,7 +373,7 @@ body {
 .bg-red {
     background-color: #b9453d;
 }
-.news-small, .news-large, .link-card {
+.news-small, .news-large, .link-card, .video-box {
     -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.1);
     box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.1);
@@ -584,13 +584,133 @@ body {
     background-color: #3da4d7;
     color: #fff;background-image: url("../img/btn-arrow-white.png");
 }
-@media (max-width:576px) {
-    
-}
 .footer p {
     font-size: 14px;
 }
 .footer a {
     color: #fff;
     text-decoration: none;
+}
+
+/* SUBPAGE */
+.subpage {
+    padding: 90px 0 390px;
+    background-image: url("../img/subpage-footer.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+.subpage-heading {
+    margin-bottom: 50px;
+}
+.subpage-heading h1 {
+    font-size: 42px;
+    font-weight: 600;
+}
+.videos-buttons {
+    margin-bottom: 50px;
+}
+.videos-buttons ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.videos-buttons ul li:not(:first-of-type) {
+    margin-left: 15px;
+}
+.videos-buttons ul li a {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #3da4d7;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 17px;
+    font-weight: 600;
+    transition-duration: 0.2s;
+}
+.videos-buttons ul li.active a, .videos-buttons ul li a:hover {
+    background-color: #3da4d7;
+    color: #fff;
+}
+.video-box {
+    padding: 45px;
+    border-radius: 0 25px 0 25px;
+    -webkit-border-radius: 0 25px 0 25px;
+    -moz-border-radius: 0 25px 0 25px;
+    -ms-border-radius: 0 25px 0 25px;
+    -o-border-radius: 0 25px 0 25px;
+    margin-bottom: 30px;
+}
+.video-box--video {
+    position: relative;
+}
+.video-box--video::before{
+    background-image: url("../img/video_play-white.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    content: "";
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+}
+.video-box--title {
+    font-size: 26px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: block;
+    transition-duration: 0.1s;
+}
+.video-box--title:hover {
+    color: #000;
+}
+.video-box--duration {
+    padding-left: 32px;
+    background-image: url("../img/stopwatch.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: #777777;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+.video-box--duration span {
+    color: #000;
+    font-weight: 600;
+}
+.video-box--text {
+    color: #777777;
+    font-size: 14px;
+    line-height: 26px;
+    padding-right: 15px;
+}
+@media (max-width: 768px) {
+    .video-box--video {
+        margin-top: 10px;
+    }
+    .video-box {
+        padding: 35px 25px;
+    }
+    .videos-buttons ul {
+        flex-direction: column;
+    }
+    .videos-buttons ul li {
+        min-height: 60px;
+    }
+    .videos-buttons ul li a {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .videos-buttons ul li:not(:first-of-type) {
+        margin-left: 0;
+    }
 }

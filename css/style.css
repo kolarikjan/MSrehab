@@ -205,6 +205,11 @@ body {
 .homepage-footer .homepage-footer--link a:hover {
     background-position: left 3px center;
 }
+@media (max-width: 1200px) {
+    .homepage--video {
+        margin-top: -180px;
+    }
+}
 @media (max-width: 768px) {
     .homepage--buttons {
         margin-top: 0;
@@ -229,6 +234,8 @@ body {
     }
     .homepage--buttons .btn {
         max-width: 100%;
+        padding: 25px 30px 25px 90px;
+        background-position: left 15px center;
     }
     .navbar-brand img {
         max-height: 80px;
@@ -248,4 +255,342 @@ body {
     .homepage-header .navbar-nav {
         margin-top: 20px;
     }
+}
+
+/* SUBPAGE HEADER */
+.subpage-header {
+    background-color: #daeffb;
+    padding: 22px 0;
+}
+.subpage-header .navbar {
+    padding: 0;
+}
+.subpage-title h2 {
+    font-size: 35px;
+    line-height: 38px;
+    font-weight: 600;
+}
+.subpage-titleSub {
+    color: #3da4d7;
+    font-size: 43px;
+    line-height: 45px;
+    font-weight: 600;
+}
+.subpage-title {
+    padding: 0 35px;
+    border-right: 3px solid #3da4d7;
+}
+.header--zdravotnici {
+    margin: 0 30px;
+}
+.header--zdravotnici a {
+    color: #b9453d;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+}
+.header--zdravotnici a img {
+    margin-right: 10px;
+}
+.header--socials {
+    margin-left: auto;
+}
+.header--socials a {
+    margin-left: 12px;
+}
+.subpage-header--content {
+    margin: 22px 0 35px;
+}
+@media (max-width: 1500px) {
+    .subpage-title h2 {
+        font-size: 26px;
+        line-height: 28px;
+    }
+    .subpage-titleSub {
+        font-size: 33px;
+        line-height: 35px;
+    }
+    .header--zdravotnici a {
+        font-size: 25px;
+    }
+}
+@media (max-width: 1330px) {
+    .header--zdravotnici {
+        margin: 0 15px;
+    }
+    .subpage-title {
+        padding: 0 20px; 
+    }
+}
+@media (max-width: 1270px) {
+    .subpage-header .navbar  {
+        display: flex;
+        flex-direction: column;
+    }
+    .subpage-title {
+        border-right: 0;
+    }
+    .header--socials {
+        margin-right: auto;
+        padding: 10px 0;
+    }
+    .subpage-title {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .subpage-header .navbar-brand img {
+        max-height: 100px;
+    }
+}
+.breadcrumb ul {
+    display: flex;
+    list-style: none;
+    background-image: url("../img/home.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.breadcrumb ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+    transition-duration: 0.1s;
+    font-weight: 500;
+}
+.breadcrumb ul li:last-of-type a, .breadcrumb ul li a:hover {
+    color: #3da4d7;
+}
+.breadcrumb ul li:not(:last-of-type) {
+    background-image: url("../img/breadcrumb-arrow.png");
+    background-repeat: no-repeat;
+    background-position: right 9px center;
+    padding-right: 26px;
+}
+.bg-lightblue {
+    background-color: #daeffb;
+}
+.bg-red {
+    background-color: #b9453d;
+}
+.news-small, .news-large, .link-card {
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.1);
+} 
+.news-large {
+    border-radius: 10px 10px 100px 10px;
+    -webkit-border-radius: 10px 10px 100px 10px;
+    -moz-border-radius: 10px 10px 100px 10px;
+    -ms-border-radius: 10px 10px 100px 10px;
+    -o-border-radius: 10px 10px 100px 10px;
+    position: relative;
+    height: calc(100% - 25px);
+    margin-bottom: 25px;
+    background-color: #fff;
+}
+.news-large--text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 15px 25px;
+    max-width: 450px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    background-color: #032f459e;
+}
+.news-large--text a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 36px;
+    transition-duration: 0.1s;
+}
+.news-large--text p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 0;
+}
+.news-small {
+    border-radius: 10px 10px 40px 10px;
+    -webkit-border-radius: 10px 10px 40px 10px;
+    -moz-border-radius: 10px 10px 40px 10px;
+    -ms-border-radius: 10px 10px 40px 10px;
+    -o-border-radius: 10px 10px 40px 10px;
+    background-color: #fff;
+    height: calc(100% - 25px);
+    margin-bottom: 25px;
+}
+.news-small--content {
+    padding: 30px 21px;
+}
+.news-small--tag {
+    background-color: #032f459e;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 13px;
+    line-height: 26px;
+    padding: 0 10px;
+}
+.news-small--date {
+    color: #3da4d7;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.news-small--title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 9px;
+    color: #000;
+    display: block;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
+.news-small--title:hover {
+    color: #b9453d;
+}
+.news-small--text {
+    color: #777777;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 0;
+}
+.news {
+    padding-bottom: 80px;
+}
+.news-large--image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 100px 10px;
+    -webkit-border-radius: 10px 10px 100px 10px;
+    -moz-border-radius: 10px 10px 100px 10px;
+    -ms-border-radius: 10px 10px 100px 10px;
+    -o-border-radius: 10px 10px 100px 10px;
+}
+.news-small--image {
+    height: 164px;
+    width: 100%;
+    object-fit: cover;
+}
+.news-small-upper .news-small--image {
+    height: 215px;
+}
+.btn-red {
+    display: block;
+    background-color: #b9453d;
+    color: #fff;
+    border: 1px solid #b9453d;
+    font-size: 14px;
+    padding: 10px 50px 10px 25px;
+    background-image: url("../img/btn-arrow-white.png");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    transition-duration: 0.2s;
+}
+.btn-red:hover {
+    background-color: #fff;
+    color: #b9453d;
+    border: 1px solid #b9453d;background-image: url("../img/btn-arrow-red.png");
+}
+@media (max-width: 1200px) {
+    .news-large--text {
+        max-width: 300px;
+    }
+}
+@media (max-width: 768px) {
+    .news-large--image {
+        min-height: 400px;
+    }
+    .news-large--text {
+        bottom: unset;
+        top: 10px;
+        right: 10px;
+        width: 100%;
+        max-width: calc(100% - 20px);
+    }
+}
+.links {
+    padding: 80px 0 140px;
+}
+.link-card {
+    margin-bottom: 25px;
+    border-radius: 10px 10px 10px 40px;
+    -webkit-border-radius: 10px 10px 10px 40px;
+    -moz-border-radius: 10px 10px 10px 40px;
+    -ms-border-radius: 10px 10px 10px 40px;
+    -o-border-radius: 10px 10px 10px 40px;
+    height: calc(100% - 25px);
+    position: relative;
+}
+.link-card img {
+    width: 100%;
+}
+.link-card--content {
+    padding: 30px 30px 95px;
+}
+.link-card--title {
+    font-size: 26px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    transition-duration: 0.1s;
+}
+.link-card--title:hover {
+    color: #3da4d7;
+}
+.link-card--text {
+    color: #777777;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 0;
+}
+.link-card--btn {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+.btn-lightbluebordered {
+    display: block;
+    border: 2px solid #3da4d7;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    padding: 14px 43px 14px 28px;
+    color: #3da4d7;
+    font-size: 14px;
+    font-weight: 600;
+    background-image: url("../img/btn-arrow-blue.png");
+    background-repeat: no-repeat;
+    background-position: right 18px center;
+    transition-duration: 0.2s;
+}
+.btn-lightbluebordered:hover {
+    background-color: #3da4d7;
+    color: #fff;background-image: url("../img/btn-arrow-white.png");
+}
+@media (max-width:576px) {
+    
+}
+.footer p {
+    font-size: 14px;
+}
+.footer a {
+    color: #fff;
+    text-decoration: none;
 }

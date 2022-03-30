@@ -713,4 +713,61 @@ body {
     .videos-buttons ul li:not(:first-of-type) {
         margin-left: 0;
     }
+    .subpage {
+        padding: 60px 0 240px;
+    }
+}
+
+.subpage-custom h2, .sub-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+.subpage-custom p, .members-list p {
+    color: #777777;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+.subpage-custom b {
+    color: #000;
+    font-weight: 600;
+}
+.members-list img {
+    height: 260px;
+    object-fit: cover;
+}
+.members-list {
+    padding-top: 65px;
+}
+.members-list .members-list--name {
+    color: #3da4d7;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 30px 0 12px;
+}
+.members-list p {
+    line-height: 24px;
+}
+.documents-list {
+    padding-top: 65px;
+}
+.documents-list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.documents-list ul li a {
+    background-image: url("../img/document-icon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+    color: #3da4d7;
+    font-size: 14px;
+    line-height: 30px;
+    text-decoration: none;
+}
+.documents-list ul li a:hover {
+    text-decoration: underline;
 }

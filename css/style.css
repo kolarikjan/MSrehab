@@ -257,7 +257,7 @@ body {
     }
 }
 
-/* SUBPAGE HEADER */
+/* ZDRAVOTNICTVI */
 .subpage-header {
     background-color: #daeffb;
     padding: 22px 0;
@@ -344,6 +344,7 @@ body {
         max-height: 100px;
     }
 }
+
 .breadcrumb ul {
     display: flex;
     list-style: none;
@@ -592,7 +593,7 @@ body {
     text-decoration: none;
 }
 
-/* SUBPAGE */
+/* VIDEA */
 .subpage {
     padding: 90px 0 390px;
     background-image: url("../img/subpage-footer.png");
@@ -718,9 +719,11 @@ body {
     }
 }
 
+/* SPOLEK */
 .subpage-custom h2, .sub-section h2 {
     font-size: 24px;
     font-weight: 600;
+    line-height: 34px;
     margin-bottom: 35px;
 }
 .subpage-custom p, .members-list p {
@@ -770,4 +773,55 @@ body {
 }
 .documents-list ul li a:hover {
     text-decoration: underline;
+}
+
+/* PSYCHOTERAPIE */
+.logos-grey {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+@media (min-width: 993px) {
+    .logos-grey a:not(:first-of-type) {
+        margin-left: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .logos-grey {
+        margin-top: 40px;
+    }
+}
+.logos-grey a {
+    margin-bottom: 15px;
+}
+
+/* PRIHLASENI */
+.login-box {
+    background-color: #f1f6f9;
+    padding: 40px 50px;
+}
+.login-box label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    display: block;
+    margin-bottom: 10px;
+}
+.login-box input:not([type="submit"]) {
+    border: none;
+    width: 100%;
+    height: 50px;
+}
+.login-box .inputBox {
+    margin-bottom: 17px;
+}
+.forgotten-password {
+    color: #3da4d7;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+@media (max-width: 576px) {
+    .login-box {
+        padding: 30px 20px;
+    }
 }

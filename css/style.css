@@ -219,7 +219,8 @@ body {
         margin-top: 0px;
     }
     .homepage--title {
-        margin-top: 50px;
+        margin-top: 0px;
+        margin-bottom: 50px;
     }
     .homepage--videoMain {
         border-radius: 12px;
@@ -345,8 +346,19 @@ body {
     }
 }
 
+.breadcrumb {
+    display: block !important;
+}
+@media (max-width: 1200px) {
+    .breadcrumb {
+        width: fit-content;
+        width: -moz-fit-content;
+        margin: auto;
+    }
+}
 .breadcrumb ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     background-image: url("../img/home.png");
     background-repeat: no-repeat;
@@ -792,6 +804,11 @@ body {
 }
 .documents-list ul li a:hover {
     text-decoration: underline;
+}
+@media (max-width: 576px) {
+    .members-list img {
+        width: 260px;
+    }
 }
 
 /* PSYCHOTERAPIE */

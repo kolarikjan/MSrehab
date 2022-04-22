@@ -14,6 +14,31 @@ $(document).ready(function () {
         navText: ["<img src='img/banner-prev.png'>", "<img src='img/banner-next.png'>"]
     });
 
+    // Spolek slider
+    $('.owl-spolek').owlCarousel({
+        items:5,
+        loop:true,
+        margin:15,
+        nav:false,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            476: {
+                items:2
+            },
+            768:{
+                items:3
+            },
+            993:{
+                items:4
+            },
+            1200:{
+                items:5,
+            }
+        }
+    });
     
     // map script
     if ($('#map').length > 0) {

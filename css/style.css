@@ -535,7 +535,7 @@ body {
     }
 }
 .links {
-    padding: 80px 0 140px;
+    padding: 80px 0 40px;
 }
 .link-card {
     margin-bottom: 25px;
@@ -611,6 +611,10 @@ body {
     background-image: url("../img/subpage-footer.png");
     background-repeat: no-repeat;
     background-position: bottom center;
+}
+.subpage-pacienti {
+    background-image: url("../img/subpage-footer2.png");
+    background-position: bottom -50px center;
 }
 .subpage.subpage-nobg {
     padding: 90px 0 100px;
@@ -747,6 +751,11 @@ body {
 @media (max-width: 576px) {
     .subpage-heading {
         margin-bottom: 30px;
+    }
+    
+    .subpage {
+        background: none;
+        padding: 60px 0 80px;
     }
 }
 
